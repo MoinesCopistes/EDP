@@ -39,35 +39,35 @@ D'intégrale :
 $$ 
 Q 
 = \int_{-\infty}^{\infty} \phi(x, t) dx 
-= \phi_0 b \int_{-\infty}^{\infty} \frac{e^{-\frac{x^2}{b^2 + 4at}}}{\sqrt{b^2 + 4at}} dx 
-=\phi_{0}b\int _{-\infty}^{+\infty}e^{-p^{2}} \, dp 
+= \phi_0 b \int_{-\infty}^{\infty} \frac{\text{exp}(-\frac{x^2}{b^2 + 4at})}{\sqrt{b^2 + 4at}} dx 
+=\phi_{0}b\int _{-\infty}^{+\infty}\text{exp}(-p^{2}) \, dp 
 = \phi_0 b \sqrt{\pi}
 $$
 ne varie pas dans le temps. On peut donc aussi écrire:
 $$
-\phi(x, t) = \frac{Q}{\sqrt{\pi (b^2 + 4at)}} e^{-\dfrac{x^2}{b^2 + 4at}}
+\phi(x, t) = \frac{Q}{\sqrt{\pi (b^2 + 4at)}} \text{exp}\left(-\frac{x^2}{b^2 + 4at}\right)
 $$
 #### Condition Initiale : Singularité
 
 Si on considère plutôt la diffusion d'une "singularité d'intégrale totale $Q$" et placée à l'origine $x = 0$ en $t = 0$, la solution sera:
 $$
-\phi(x, t) = \frac{Q}{\sqrt{\pi 4at}} e^{-\dfrac{x^2}{4at}} \quad
+\phi(x, t) = \frac{Q}{\sqrt{\pi 4at}} e^{-\frac{x^2}{4at}} \quad
 $$
 La condition initiale Gaussienne correspond à une singularité d'intégrale $Q$ qui aurait diffusé pendant un temps$\tau=b^{2}/4\alpha$. Le temps mesuré à partir de la condition initiale Gaussienne est $t$; celui mesuré à partir de la condition initiale singulière est $\tau+t$.
 
-#### Condition Initiale : cas général par convolution
+#### #### Condition Initiale : cas général par convolution
 
 On trouve la solution pour une distribution initiale quelconque $\phi(0,s)=f(s)$ en additionnant la contribution de chaque petit morceaux de $f(s)$ à la solution. Dans le cas à une dimension spatiale, un morceaux infinitésimal correspond à une aire $f(s)ds=dQ(s)$ dont la contribution à la solution est :
 $$
-\frac{dQ(s)}{\sqrt{\pi 4at}} e^{-\dfrac{(x-s)^2}{4at}} = \frac{f(s)ds}{\sqrt{\pi 4at}} e^{-\dfrac{(x-s)^2}{4at}}
+\frac{dQ(s)}{\sqrt{\pi 4at}} e^{-\frac{(x-s)^2}{4at}} = \frac{f(s)ds}{\sqrt{\pi 4at}} e^{-\frac{(x-s)^2}{4at}}
 $$
 Qu'on intègre alors pour obtenir : 
 $$
-\phi(x,t)=\frac{1}{\sqrt{\pi 4at}}\int   e^{-\dfrac{(x-s)^2}{4at}} f(s)ds 
+\phi(x,t)=\frac{1}{\sqrt{\pi 4at}}\int   e^{-\frac{(x-s)^2}{4at}} f(s)ds 
 $$
 On dit que la fonction :
 $$
-G(r,t)=\frac{1}{\sqrt{ 4\pi \alpha t }}e^{-\dfrac{r^2}{4at}}
+G(r,t)=\frac{1}{\sqrt{ 4\pi \alpha t }}e^{-\frac{r^2}{4at}}
 $$
 est la solution élémentaire (i.e. la "fonction de Green") de l'équation de diffusion en domaine non borné 1-D, la solution est alors la convolution entre la condition initiale et la fonction de Green :
 $$

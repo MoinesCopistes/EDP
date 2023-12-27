@@ -1,1 +1,0 @@
-# Équation de la Chaleur
