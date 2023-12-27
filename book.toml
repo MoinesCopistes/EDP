@@ -31,4 +31,4 @@ additional-css = ['mdbook-admonish.css']
 # input-404 = "not-found.md"
 
 [output.html.fold] # If you want to fold the chapters in the sidebar
-enable = true
+enable = false
