@@ -78,7 +78,7 @@ $$
 TODO : Considérer la distribution chapeau pour $0\leq r\leq \sigma$ et $F(r)=0$ pour $r>\sigma$, et obtenir la solution $\phi(r)$ correspondante pour $0\leq r\leq \sigma$. Pour $r> \sigma$, on obtient que $\phi(r)=\frac{Q}{2\pi}\ln\left( \frac{r}{L} \right)$. Donc, au dela de la distance $\sigma$, la solution est exactment la même que celle produite par la singularité
 
 #### Superposition
-On peut aussi additionner des solutions. Par exemple, si on place une singularité d’intégrale $Q$ en $x = x_{0}$ et une singularité d’intégrale $\large−Q$ en $x = −x_{0}$, on obtient le champ induit par un dipôle :
+On peut aussi additionner des solutions. Par exemple, si on place une singularité d’intégrale $Q$ en $x = x_{0}$ et une singularité d’intégrale $−Q$ en $x = −x_{0}$, on obtient le champ induit par un dipôle :
 $$\phi(x, y) = \frac{Q}{4\pi} \log\left(\frac{(x - x_0)^2 + y^2}{L^2}\right) - \frac{Q}{4\pi} \log\left(\frac{(x + x_0)^2 + y^2}{L^2}\right) = \frac{Q}{4\pi} \log\left(\frac{(x - x_0)^2 + y^2}{(x + x_0)^2 + y^2}\right) $$
 #### Cas Général par Convolution
 On trouve la solution pour une distribution quelconque $F$ en additionnant la contribution de chaque petit morceaux de $F(x,y)$ à la solution. Dans le cas à deux dimensions spatiales, un morceaux infinitésimal correspond à une aire $F(x',y')dx'dy'=dQ(x',y')$ dont la contribution à la solution est :

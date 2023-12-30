@@ -29,14 +29,14 @@ y=r\sin(\theta)
 $$
 On étudie donc une fonction $f(r,\theta)$.
 Pour trouver $dr \equiv(dx,dy)$ on calcule d'abord $h_{r}$ et $h(\theta)$ :
-$$\large
+$$
 h_r = \left| \frac{\partial (x, y)}{\partial (r, r)} \right| = \sqrt{\cos^2(\theta) + \sin^2(\theta)} = 1
 $$
-$$\large
+$$
 h_\theta = \left| \frac{\partial (x, y)}{\partial (\theta, \theta)} \right| = \sqrt{[-r \sin(\theta)]^2 + [r \cos(\theta)]^2} = r
 $$
 $dr$ est donc donné par :
-$$\large
+$$
 dr = dr \, \hat{r} + r \, d\theta \, \hat{\theta}
 $$
 On peut on déduire l'expression de plusieurs quantités intéressantes :
@@ -143,19 +143,19 @@ $$\frac{1}{r}\, \frac{\partial}{\partial r}(rA_{1})+\frac{1}{r}\, \frac{\partial
 $$ \nabla^2 f = \frac{1}{r} \frac{\partial}{\partial r} \left( r f_{r} \right) + \frac{1}{r^2} f_{\theta \theta} + f_{zz} $$
 **Autres :**
 1. L'élement de ligne :
-$$\large
+$$
 dl = dr \, \hat{r} + r \, d\theta \, \hat{\theta} + dz \, \hat{z}
 $$
 2. L'élement de Volume :
-$$\large
+$$
 dV = r \, dr \, d\theta \, dz
 $$
 3. L'élément de surface sur une surface de cylindre de rayon constant $\theta$ :
-$$\large
+$$
 dS_{r} = r \, d\theta \, dz
 $$
 4. L'élément de surface sur une plan d'azimuth constant :
-$$\large
+$$
 dS_{\theta} = dr \, dz
 $$
 5. L'élément de surface sur une plan d'hauteur constante :

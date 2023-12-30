@@ -9,9 +9,9 @@ Les solutions de l'équation de Bessel sont catégorisées en fonction de $\alph
 
 ### Fonctions de Bessel de Première Espèce
 
-Ces fonctions de Bessel notées $J_{n}$ sont les seules qui sont définies en $0$. Ce sont les solutions de l'équation de Bessel pour $\alpha$ entier ou positif.
+Ces fonctions de Bessel notées $J_{n}$ sont les seules qui sont définies en $0$.
 ![Fonctions de Bessel](assets/bessel.png)
-
+L'absicce du $n^{e}$ zéro de la $m^{e}$ fonction de Bessel de première espèce se note $z_{nm}$. Seule $J_{0}$ est nulle à l'origine.
 ### Fonctions de Bessel de Seconde Espèce
 
 Les fonctions de Bessel de seconde espèce ont un singularité à l'origine.
