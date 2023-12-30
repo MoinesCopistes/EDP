@@ -23,7 +23,7 @@ $$
 $$
 \Leftrightarrow -[cu]^{b}_{a}=0
 $$
-Ce qui est facilement vérifié sur un domaine périodique et un domaine infini.
+Ce qui est facilement vérifié sur un domaine périodique et un domaine infini. Cependant
 
 ## Puit de vitesse
 

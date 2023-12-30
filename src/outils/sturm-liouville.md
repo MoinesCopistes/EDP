@@ -34,10 +34,17 @@ La restriction des valeurs propres pour $\sin(k_{n}x)$ aux naturels non-nuls pro
 ## Le cas $y''-k^{2} y=0$
 
 $y''-k^{2} y=0$ est un problème de Sturm-Liouville où $p(x)=1, q(x)=0, w(x)=-1$.
-
+En général on aura $\large y(x)=ae^{kx}+be^{-kx}=A\cosh(kx)+B\sinh(kx)$
 $X(0)=0, X(L)=0$ $\Rightarrow$ Solution Triviale
 $X'(0)=0, X'(L)=0$ $\Rightarrow$ Solution Triviale
 $X(-L)=X(L),X'(-L)=X'(L)$ $\Rightarrow$ Solution Triviale
+## Le cas $y''=0$
+
+$y''-k^{2} y=0$ est un problème de Sturm-Liouville où $p(x)=1, q(x)=0, w(x)=-1$.
+En général on aura $\large y(x)=Ax+B$
+
+
+
 
 ### Équation de Bessel
 
@@ -48,3 +55,44 @@ $$
 $$
 \Leftrightarrow \frac{d}{dx}(xy_{x})+\left( 1-\frac{\alpha^{2}}{x^{2}} \right)xy=0
 $$
+
+## Opérateurs Auto-Adjoint
+Considérons le problème avec un opérateur différentiel linéaire $\large L$ sur une fonction $\large X$   :
+$$
+\large L(X)+k^{2}X=0
+$$
+Soumise à des condition limites homogènes et linéaires en $\large x=0$ et $\large x=L$ :
+$$
+\large l(X)|_{0}=0\quad\text{et}\quad r(X)|_{L}=0
+$$
+On a donc :
+$$
+\large L(X_{n})+k^{2}_{n}X_{n}=0\quad \forall n
+$$
+Soient deux fonctions propres $\large X_{n}$ et $\large X_{m}$ à valeur propre distinctes, on peut écrire :
+$$
+\large X_{m}(L(X_{n})+k^{2}_{n}X_{n})=0\quad\text{et}\quad X_{n}(L(X_{m})+k^{2}_{m}X_{m})=0
+$$
+Dont on prend la difference et après manipulation :
+$$
+\large \begin{align}
+X_{m}L(X_{n})-X_{n}L(X_{m})&=(k^{2}_{m}-k^{2}_{n})X_{n}X_{m} \\
+\int_{0}^{L} X_{m}L(X_{n})-X_{n}L(X_{m}) \, dx &=(k^{2}_{m}-k^{2}_{n}) \int _{0}^{L}X_{n}X_{m} \, dx \\
+\langle X_{m},L(X_{n})\rangle-\langle X_{n},L(X_{m})\rangle&=(k^{2}_{m}-k^{2}_{n})\langle X_{m},X_{n}\rangle
+\end{align}
+$$
+Où on a définit le produit scalaire dans l'espace de fonction :
+$$
+\large \langle X_{m},X_{b}\rangle=\int _{0}^{L}X_{n}X_{m} \, dx
+$$
+$\large \langle X_{m},X_{n}\rangle$ sont orthogonaux quand le terme de gauche de l'avant dernière égalité s'annule :
+$$
+\large \langle X_{m},L(X_{n})\rangle=\langle X_{n},L(X_{m})\rangle \quad (m\neq n)
+$$
+Cette égalité dépend non seulement de la nature de l’opérateur, mais aussi des conditions limites associées. Quand l'équation est vérifiée, on dit que l’opérateur $\large L$ muni des conditions aux limites données est auto-adjoint.
+
+**!!! Il se trouve que l'opérateur dans un problème de Sturm-Liouville régulier est auto-adjoint. !!!** 
+
+La preuve pour $\large L=\frac{d}{dx^{2}}$ muni de conditions limites homogènes linéaires se fait par intégration par parties.
+
+L'analogie entre les opérateurs auto-adjoints avec les matrices symétrique est **très forte**.
