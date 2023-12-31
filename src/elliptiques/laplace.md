@@ -264,7 +264,7 @@ A_{m}=\frac{2}{L} \frac{h(T_{0}-T_{\infty}) \frac{1}{k_{m}}(-1)^{m}}{h\cosh(k_{m
 $$
 On peut finalement trouver une expression pour la température :
 $$
-\boxed{\frac{T_{0}-T(x,y)}{T_{0}-T_{\infty}}=\frac{2}{Lk_{m}} \frac{h (-1)^{m+1}\cos(k_{n}x)\cosh(k_{n}y)}{h\cosh(k_{m}H)+\kappa k_{m}\sinh(k_{m}H)}}
+\boxed{\frac{T_{0}-T(x,y)}{T_{0}-T_{\infty}}=\sum_{n=1}^{\infty}\frac{2}{Lk_{n}} \frac{h (-1)^{n+1}\cos(k_{n}x)\cosh(k_{n}y)}{h\cosh(k_{n}H)+\kappa k_{n}\sinh(k_{n}H)}}
 $$
 💀
 ### Dans un Cercle

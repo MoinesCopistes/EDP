@@ -169,6 +169,9 @@ $$
 
 #### Sources
 https://www.jfoadi.me.uk/documents/lecture_mathphys2_05.pdf
+
 Syllabus LEPL1103
+
 https://en.wikipedia.org/wiki/Spherical_coordinate_system
+
 https://en.wikipedia.org/wiki/Cylindrical_coordinate_system

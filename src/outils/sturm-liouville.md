@@ -93,6 +93,6 @@ Cette égalité dépend non seulement de la nature de l’opérateur, mais aussi
 
 **!!! Il se trouve que l'opérateur dans un problème de Sturm-Liouville régulier est auto-adjoint. !!!** 
 
-La preuve pour $L=\frac{d}{dx^{2}}$ muni de conditions limites homogènes linéaires se fait par intégration par parties.
+La preuve pour $L=\dfrac{d}{dx^{2}}$ muni de conditions limites homogènes linéaires se fait par intégration par parties.
 
 L'analogie entre les opérateurs auto-adjoints avec les matrices symétrique est **très forte**.

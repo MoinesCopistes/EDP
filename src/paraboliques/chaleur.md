@@ -131,7 +131,7 @@ $$
 $$
 Si les paramètres sont constants :
 $$
-\large\boxed{u_{t}=\alpha \nabla^{2}u+\frac{Q}{\rho\,c}} 
+\boxed{u_{t}=\alpha \nabla^{2}u+\frac{Q}{\rho\,c}} 
 $$
 Les conditions limites/initiales s'étendent facilement au cas 2D/3D et on note que si on divise la frontière en 3 composantes en fonction du type de condition limite $\Gamma=\Gamma_{D}\cup \Gamma_{N}\cup \Gamma_{R}$, on doit avoir $\Gamma_{D}\cap \Gamma_{N}=\Gamma_{D}\cap \Gamma_{R}=\Gamma_{R}\cap \Gamma_{N}=\emptyset$
 
