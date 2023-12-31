@@ -19,6 +19,7 @@
     - [Fonctions de Bessel](outils/bessel.md)
     - [Séparation des Variables](outils/separation.md)
     - [Coordonnées Curvilignes et Opérateurs Différentiels](outils/curvilignes.md)
+    - [Fonctions d'erreur]()
 - [Example Chapter](test/root.md)
     - [Example Page](test/test.md)
     - [Welcome](test/welcome.md)
