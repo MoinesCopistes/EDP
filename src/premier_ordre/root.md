@@ -10,7 +10,7 @@ P\, \text{d}u=R\,\text{d}x \quad\ \Leftrightarrow \quad\ Q\, \text{d}u=R\, \text
 $$
 On sait aussi que le problème est bien posé si les ***courbes caractéristiques*** définies par :
 $$
-Pdx=Qdy
+Pdy=Qdx
 $$
 ne se croisent jamais et n'ont qu'une intersection avec la condition initiale/condition limite.
 
