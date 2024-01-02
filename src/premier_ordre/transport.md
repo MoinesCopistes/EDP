@@ -2,7 +2,7 @@
 
 # L'équation de transport ou de convection
 
-## Forme Générale
+## Forme Homogène
 
 $$
 c(t,x,u) \frac{\partial u(x,y)}{\partial x}+\frac{\partial u(x,y)}{\partial t}=0
