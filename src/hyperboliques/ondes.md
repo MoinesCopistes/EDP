@@ -85,15 +85,7 @@ $$
 
 
 
-## Domaine Circulaire
 
-Le nombre d'onde d'un des modes d'une membrane circulaire est donnée par :
-
-$$
-k_{mn}=\frac{z_{mn}}{a}
-$$
-
-Où $z_{mn}$ est la $n^{e}$ racine de la $m^{e}$ fonction de Bessel de première espèce.
 
 ## Étude Par Séparation de Variables
 La forme à plusieurs variables s'écrit :
@@ -302,3 +294,22 @@ $$
 
 
 
+## Points Importants (à compléter)
+**Domaine Rectangulaire :**
+
+Le nombre d'onde d'un des modes d'une membrane rectangulaire est donnée par :
+
+$$
+k_{mn}=c\sqrt{ \left( \frac{m\pi}{H} \right)^{2}+\left( \frac{n\pi}{L} \right)^{2} }
+$$
+
+
+**Domaine Circulaire :**
+
+Le nombre d'onde d'un des modes d'une membrane circulaire est donnée par :
+
+$$
+k_{mn}=\frac{z_{mn}}{a}
+$$
+
+Où $z_{mn}$ est la $n^{e}$ racine de la $m^{e}$ fonction de Bessel de première espèce.
