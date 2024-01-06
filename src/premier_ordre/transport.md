@@ -30,7 +30,7 @@ Ce qui est facilement vérifié sur un domaine périodique et un domaine infini.
 Le cas d'un puit de vitesse pour la forme conservative est donné par :
 
 $$
-c(x)=c_{\text{max}}-\frac{c_{\text{max}}-c_{\text{min}}}{(1+x^{2}/a^{2})}=\frac{c_{\text{min}}+c_{\text{min}}x^{2}/a^{2}}{(1+x^{2}/a^{2})}
+c(x)=c_{\text{max}}-\frac{c_{\text{max}}-c_{\text{min}}}{(1+x^{2}/a^{2})}=\frac{c_{\text{min}}+c_{\text{max}}x^{2}/a^{2}}{(1+x^{2}/a^{2})}
 $$
 
 Qui donne une relation implicite pour les caractéristiques $I(x)-I(s)=t$ qu'il faut résoudre numériquement. 
