@@ -55,7 +55,7 @@ $$
 $$
 La condition initiale Gaussienne correspond à une singularité d'intégrale $Q$ qui aurait diffusé pendant un temps$\tau=b^{2}/4\alpha$. Le temps mesuré à partir de la condition initiale Gaussienne est $t$; celui mesuré à partir de la condition initiale singulière est $\tau+t$.
 
-#### #### Condition Initiale : cas général par convolution
+#### Condition Initiale : cas général par convolution
 
 On trouve la solution pour une distribution initiale quelconque $\phi(0,s)=f(s)$ en additionnant la contribution de chaque petit morceaux de $f(s)$ à la solution. Dans le cas à une dimension spatiale, un morceaux infinitésimal correspond à une aire $f(s)ds=dQ(s)$ dont la contribution à la solution est :
 $$

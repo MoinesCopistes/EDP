@@ -37,7 +37,7 @@ $$
 $$
 On peut déterminer $C$ par le résultat ci-dessus qui montre que l'intégrale du terme source donne le flux pondéré sortant de la surface d'intégration, comme dans ce cas si on a $A=1$ et que dans le cas d'un cercle $\phi_{n}=\phi_{r}$ :
 $$
-\int_{\Omega} F  \, dxdy= \oint_{\partial \Omega} A(s) \dfrac{\partial\phi}{\partial n}(s) dl(s)=\int_{C}\phi_{r}  \, dxdy=\int _{0}^{2\pi} \dfrac{C}{\sqrt{ \cos(t)^{2}+\sin(t)^{2} }}|(-\sin(t),\cos(t))| \, dt=2\pi C  
+\int_{\Omega} F  \, dxdy= \oint_{\partial \Omega} A(s) \dfrac{\partial\phi}{\partial n}(s) dl(s)=\int_{C}\phi_{r}  \, dl=\int _{0}^{2\pi} \dfrac{C}{\sqrt{ \cos(t)^{2}+\sin(t)^{2} }}|(-\sin(t),\cos(t))| \, dt=2\pi C  
 $$
 $$\Rightarrow C=Q/2\pi \Rightarrow \dfrac{d\phi}{dr}=\dfrac{Q}{2\pi r}\Rightarrow \phi(r)=\dfrac{Q}{2\pi}\ln\left( \dfrac{r}{L} \right)  $$
 Avec $L$ une constante de longueur arbitraire (les profs n'aiment pas trop voir des termes avec des unités dans des fonctions comme $\ln(\dots)$).

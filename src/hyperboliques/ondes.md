@@ -145,7 +145,7 @@ $$
 $$
 Qu'on peut combiner avec l'expression de $l$ pour trouver :
 $$
-k^{2}=\left( \frac{m\pi}{H} \right)^{2}+\left( \frac{n\pi}{L} \right)^{2}
+\boxed{k_{{mn}}^{2}=\left( \frac{m\pi}{H} \right)^{2}+\left( \frac{n\pi}{L} \right)^{2}}
 $$
 Les fonctions propres du Laplacien dans un rectangle sont :
 $$
@@ -163,7 +163,7 @@ On a donc la solution provisoire de l'EDP + condition limite :
 $$
 
 \begin{align}
-u(x,y,t)=\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}[&A_{mn}\cos(\omega_{mn} ct)  +B_{mn}\sin(\omega_{mn}ct)] \\
+u(x,y,t)=\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}[&A_{mn}\cos(\omega_{mn}t)  +B_{mn}\sin(\omega_{mn}t)] \\
 \cdot &\sin(\frac{n\pi}{L}x)\sin(\frac{m\pi}{H}y)
 \end{align}
 $$
