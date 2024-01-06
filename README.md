@@ -1,6 +1,5 @@
 # EDP
 
 TODO List :
-- [ ] Partie sur les fonctions d'erreur
+- [x] Diffusion en domaine semi-infini
 - [ ] Faire un vrai document sur le problème de Helmholtz
-- [ ] Diffusion en domaine semi-infini

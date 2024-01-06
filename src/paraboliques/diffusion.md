@@ -140,7 +140,91 @@ $$
 $$
 On constate que les modes à grand nombre d'onde ($n$ élevé) décroissent beaucoup plus vite que les plus petits modes, les informations à haute fréquence se perdent très rapidement. C'est notamment pour cela qu'on ne peut pas remonter le temps et trouver l'état d'une diffusion dans un temps qui précède la condition initiale.
 
+### Domaine Semi-Infini
+On a les condition suivantes sur l'axe $\large t$ positif et $\large x$ positif :
+$$
+\large 
+\left\{
 
+\begin{align}
+u(x,0)&=U_{1} \\
+u(0,t)&=U_{0}
+\end{align}
+\right.
+$$
+On définit alors le changement de variables $\large v(x,t)=u(x,t)-U_{1}$, ce qui nous donne les conditions suivantes sur $\large v$ :
+$$
+\large 
+\left\{
 
+\begin{align}
+v(x,0)&=0 \\
+v(0,t)&=U_{0}-U_{1}=V_{0}
+\end{align}
+\right.
+$$
+La solution peut se trouver en définissant la variable adimensionnelle $\large \eta=\frac{x}{\sqrt{ \alpha t }}$ et en supposant que la solution sera de la forme $\large v(x,t)=f(\eta)$, on a par ailleurs les expression suivantes pour les dérivées de $\large \eta$ :
+$$
+\large 
+\begin{align}
+\frac{\partial \eta}{\partial x} &= \frac{1}{\sqrt{ \alpha t }} \\
+\frac{\partial \eta}{\partial t}&=\frac{x}{\sqrt{ \alpha }}\left( -\frac{1}{2}t^{-3/2} \right)  \\
+&=-\frac{1}{2} \frac{x}{\sqrt{ \alpha }} \frac{1}{\sqrt{ t }} \frac{1}{t} \\
+&=-\frac{\eta}{2t}
+\end{align}
+$$
+Ce qui nous permet de développer les dérivées de $\large v$ :
+$$
+\large 
+\begin{align}
+\frac{\partial v}{\partial x} &= f'(\eta) \frac{\partial \eta}{\partial x}=f'(\eta) \frac{1}{\sqrt{ \alpha t }} \\ 
+
+\frac{\partial^{2} v}{\partial x^{2}} &= f''(\eta) \frac{\partial \eta}{\partial x}\frac{1}{\sqrt{ \alpha t }}=f''(\eta)\frac{1}{\alpha t}  \\ 
+
+\frac{\partial v}{\partial t}&=f'(\eta)\frac{\partial \eta}{\partial t}=f'(\eta) \left( -\frac{\eta}{2t}\right)
+\end{align}
+$$
+Qu'on substitue maintenant dans l'EDP de diffusion :
+$$
+\large 
+v_{t}=\alpha_{xx} \Rightarrow \, f'(\eta) \left( -\frac{\eta}{2t}\right)=\alpha f''(\eta)\frac{1}{\alpha t}\Rightarrow \boxed{f''(\eta)+\frac{\eta}{2}f'(\eta)=0}  
+$$
+Ce qui nous donne une EDO ! Pour la résoudre on définit $\large w(\eta)=f'(\eta)$ :
+$$
+\large 
+\begin{align}
+w'(\eta)&=-\frac{\eta}{2}w(\eta) \\
+\frac{dw}{d \eta}&=-\frac{\eta}{2}w \\
+\frac{dw}{w}&=-\frac{\eta}{2}d \eta \\
+\log\left( \frac{w(\eta)}{w(0)} \right)&=-\frac{\eta^{2}}{4} \\
+\Rightarrow w(\eta)&=w(0)\exp(-\eta^{2}/4) =f'(\eta) \\
+\Rightarrow f(\eta)&=w(0)\int^{\eta}_{0}\exp(-s^{2}/4) \, d s+C 
+\end{align}
+$$
+Avec l'unique condition limite on impose $\large V_{0}$ à $\large x=0$ :
+$$
+\large f(0)=C=V_{0}\Rightarrow f(\eta)=w(0)\int^{\eta}_{0}\exp(-s^{2}/4) \, d s+V_{0}
+$$
+On a aussi que comme l'intégrale de $\large v$ doit être finie comme on est dans un cas physique et que donc on doit avoir une valeur nulle à l'infini :
+$$
+\large \lim_{ \eta \to \infty } f(\eta)=w(0)\sqrt{ \pi }+V_{0}  =0\rightarrow w(0)=-V_{0}/\sqrt{ \pi }
+$$
+Où on a utilisé la valeur de l'intégrale de l'intégrale de Gauss $\large \int_{0}^{\infty} e^{-(x/2)^{2}}  \, dx=\sqrt{ \pi }$.
+
+On peut être satisfait par cette solution, ou on peut poser $\large \nu=\frac{s}{2}$, $\large ds=2d\nu$
+$$
+\large \Rightarrow f(\eta)=V_{0}\left( 1-\frac{2}{\sqrt{ \pi }} \int^{\eta/2}_{0}\exp(-\nu^{2}) \, d \nu \right) 
+$$
+On introduit alors les fonction "erreur" et "erreur complémentaires" :
+$$
+\large \text{erf}(x)\equiv \frac{2}{\sqrt{ \pi }} \int _{ 0 } ^{ x } e^{ -\nu^{2} }  \, d\nu \quad \text{et} \quad \text{erfc}(x)\equiv 1-\text{erf}(x)
+$$
+Ce qui nous permet d'écrire la solution sous la forme suivante :
+$$
+\large v(x,t)=f(\eta)=V_{0}\text{erfc}\left( \frac{x}{2\sqrt{ \alpha t }} \right)
+$$
+$$
+\large \boxed{u(x,t)=(U_{0}-U_{1})\text{erfc}\left( \frac{2}{\sqrt{ \alpha t }} \right) + U_{1}}
+$$
 # Résumé
 
