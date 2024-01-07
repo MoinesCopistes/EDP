@@ -35,13 +35,16 @@ La restriction des valeurs propres pour $\sin(k_{n}x)$ aux naturels non-nuls pro
 
 $y''-k^{2} y=0$ est un problème de Sturm-Liouville où $p(x)=1, q(x)=0, w(x)=-1$.
 En général on aura $y(x)=ae^{kx}+be^{-kx}=A\cosh(kx)+B\sinh(kx)$
+
 $X(0)=0, X(L)=0$ $\Rightarrow$ Solution Triviale
+
 $X'(0)=0, X'(L)=0$ $\Rightarrow$ Solution Triviale
+
 $X(-L)=X(L),X'(-L)=X'(L)$ $\Rightarrow$ Solution Triviale
 ## Le cas $y''=0$
 
 $y''-k^{2} y=0$ est un problème de Sturm-Liouville où $p(x)=1, q(x)=0, w(x)=-1$.
-En général on aura $y(x)=Ax+B$
+En général on aura $y(x)=Ax+B$.
 
 
 
