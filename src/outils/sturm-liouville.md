@@ -43,11 +43,8 @@ $X'(0)=0, X'(L)=0$ $\Rightarrow$ Solution Triviale
 $X(-L)=X(L),X'(-L)=X'(L)$ $\Rightarrow$ Solution Triviale
 ## Le cas $y''=0$
 
-$y''-k^{2} y=0$ est un problème de Sturm-Liouville où $p(x)=1, q(x)=0, w(x)=-1$.
+$y''=0$ est un problème de Sturm-Liouville où $p(x)=1, q(x)=0,\lambda=0$.
 En général on aura $y(x)=Ax+B$.
-
-
-
 
 ### Équation de Bessel
 
